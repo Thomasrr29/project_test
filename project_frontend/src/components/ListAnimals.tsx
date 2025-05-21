@@ -24,7 +24,7 @@ const ListAnimalsComponent = () => {
     return (
         <section className="w-full flex flex-col items-center h-screen mt-10 gap-y-12">
             <h1 className="font-extrabold text-5xl">Nuestros animales</h1>
-            <div>
+            <div className="w-4/5 mx-auto">
                 {data && <RenderAnimals animals={data.data} deleteAnimal={deleteAnimal} />}
             </div>
 

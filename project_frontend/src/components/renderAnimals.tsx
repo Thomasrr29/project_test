@@ -44,18 +44,20 @@ const RenderAnimals: React.FC<AnimalProps> = ({animals, deleteAnimal}) => {
     }
 
     return (
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(520px,1fr))] place-items-center">
+        <div className="w-full grid grid-cols-[repeat(auto-fill,minmax(420px,1fr))] place-items-center gap-4">
             {
                 animal.length > 0 ? (
 
                     animal.map((animal: Animal) => (
                         
-                        <Link to={`/animals/${animal.id}`} key={animal.id}>                             
+                        <Link
+                        className="w-full max-w-full " 
+                        to={`/animals/${animal.id}`} key={animal.id}>                             
                             <div                              
-                                className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">                                 
-                                <a href="#">                                     
-                                    <img className="rounded-t-lg" src={animal.image} alt="" />                                 
-                                </a>                                 
+                                className="w-full bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">                                 
+                                <div>
+                                    <img className="rounded-t-lg w-full h-[200px] object-cover" src={animal.image} alt="" /> 
+                                </div>                                                                 
                                 <div className="p-5">                                     
                                     <a href="#">                                         
                                         <h5 className="mb-2 text-4xl font-bold tracking-tight">{animal.name}</h5>                                         
