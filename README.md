@@ -1,31 +1,31 @@
-Catálogo de Animales
-Descripción
+🐾 Catálogo de Animales
+📋 Descripción
 Este proyecto es un monorepo que contiene tanto el frontend como el backend de una aplicación web para gestionar un catálogo digital de animales. Permite visualizar, agregar, editar y eliminar animales, así como acceder a información detallada de cada especie.
-Características
+✨ Características
 
-Listado de animales en un grid responsivo
-Visualización detallada de cada animal
-Enlace directo a búsqueda en Wikipedia
-Funcionalidad CRUD completa (Crear, Leer, Actualizar quedo pendiente, Eliminar)
-Base de datos para almacenamiento persistente
-Documentación de API con Swagger
+📱 Listado de animales en un grid responsivo
+🔍 Visualización detallada de cada animal
+🌐 Enlace directo a búsqueda en Wikipedia
+⚙️ Funcionalidad CRUD completa (Crear, Leer, Actualizar quedo pendiente, Eliminar)
+💾 Base de datos para almacenamiento persistente
+📚 Documentación de API con Swagger
 
-Tecnologías utilizadas
-Frontend
+🛠️ Tecnologías utilizadas
+💻 Frontend
 
-React + Vite
-TypeScript
-React Router para navegación
-Axios para peticiones HTTP
-Tailwind CSS para estilos
+⚛️ React + Vite
+📘 TypeScript
+🧭 React Router para navegación
+🌐 Axios para peticiones HTTP
+🎨 Tailwind CSS para estilos
 
-Backend
+🚀 Backend
 
-NestJS
-TypeScript
-TypeORM
-PostgreSQL
-Swagger para documentación de API
+🏗️ NestJS
+📘 TypeScript
+🗄️ TypeORM
+🐘 PostgreSQL
+📖 Swagger para documentación de API
 
 📁 Estructura del proyecto
 🚀 Backend (NestJS)
@@ -51,7 +51,7 @@ project/
 │   ├── 🏠 app.module.ts              # Módulo principal
 │   └── 🚀 main.ts                    # Punto de entrada
 ├── 🧪 test/                          # Tests
-├── 🚫 .env                           # Variables de entorno
+├── 🔒 .env                           # Variables de entorno
 ├── 🚫 .gitignore                     # Archivos ignorados por Git
 ├── 📋 .prettierrc                    # Configuración Prettier
 ├── 🔧 eslint.config.mjs              # Configuración ESLint
@@ -104,48 +104,37 @@ project_frontend/
 🎯 Componentes Frontend Detallados
 ComponenteDescripciónResponsabilidad🎭 renderAnimals.tsxLista de animalesRenderiza el grid de tarjetas de animales➕ createComponent.tsxFormulario de creaciónPermite crear nuevos animales🔍 searchByIdAnimal.tsxBúsqueda por IDBusca un animal específico📋 ListAnimals.tsxContenedor de listaManeja el estado de la lista❌ ErrorComponent.tsxManejo de erroresMuestra mensajes de error⏳ Loading.tsxEstado de cargaIndica procesos en progreso🎯 headerComponent.tsxEncabezadoNavegación principal🦶 footerComponent.tsxPie de páginaInformación adicional
 🏗️ Arquitectura Backend
-MóduloDescripción🐾 Animals ModuleCRUD completo para gestión de animales⚙️ Config ModuleConfiguración de base de datos y variables🔗 Common ModuleFiltros, pipes y utilidades compartidas📝 Types ModuleEnums y tipos personalizados
-Instalación
-
-Clona el repositorio:
-
-bash git clone [https://github.com/tu-usuario/catalogo-animales.git](https://github.com/Thomasrr29/project_test.git)
-
-Configura el backend (NestJS):
-
-bash cd project
+MóduloDescripción🐾 Animals ModuleCRUD completa para gestión de animales⚙️ Config ModuleConfiguración de base de datos y variables🔗 Common ModuleFiltros, pipes y utilidades compartidas📝 Types ModuleEnums y tipos personalizados
+🚀 Instalación
+1. Clona el repositorio:
+bashgit clone https://github.com/tu-usuario/catalogo-animales.git
+2. Configura el backend (NestJS):
+bashcd project
 npm install
 
 # Configura las variables de entorno
 # Crea un archivo .env basado en .env.example
-
-Configura el frontend (React + Vite):
-
-bash cd ../project_frontend
+3. Configura el frontend (React + Vite):
+bashcd ../project_frontend
 npm install
-
-Inicia el proyecto:
-
+4. Inicia el proyecto:
 Backend:
-bash cd project
+bashcd project
 npm run start
 # o para modo desarrollo:
-npm run start
+npm run start:dev
 Frontend:
-bash cd project_frontend
+bashcd project_frontend
 npm run dev
+5. Accede a la aplicación:
 
-Accede a la aplicación:
+💻 Frontend: http://localhost:5173
+⚙️ API Backend: http://localhost:3000/animals
+📚 Documentación API: http://localhost:3000/api
 
-Frontend: http://localhost:5173
-API Backend: http://localhost:3000/animals
-Documentación API: http://localhost:3000/api
-
-
-
-API
+🔌 API
 El backend proporciona una API RESTful con los siguientes endpoints:
-Animales
+🐾 Animales
 
 GET /animals - Obtener todos los animales
 GET /animals/:id - Obtener un animal específico
